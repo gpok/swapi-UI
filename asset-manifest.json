@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/swapi-UI/static/css/main.00855698.chunk.css",
+    "main.js": "/swapi-UI/static/js/main.3999cc17.chunk.js",
+    "main.js.map": "/swapi-UI/static/js/main.3999cc17.chunk.js.map",
+    "runtime-main.js": "/swapi-UI/static/js/runtime-main.9929a8b4.js",
+    "runtime-main.js.map": "/swapi-UI/static/js/runtime-main.9929a8b4.js.map",
+    "static/js/2.7e8fced2.chunk.js": "/swapi-UI/static/js/2.7e8fced2.chunk.js",
+    "static/js/2.7e8fced2.chunk.js.map": "/swapi-UI/static/js/2.7e8fced2.chunk.js.map",
+    "index.html": "/swapi-UI/index.html",
+    "precache-manifest.8a7271f4d1f127917bc45079ce1f8ffc.js": "/swapi-UI/precache-manifest.8a7271f4d1f127917bc45079ce1f8ffc.js",
+    "service-worker.js": "/swapi-UI/service-worker.js",
+    "static/css/main.00855698.chunk.css.map": "/swapi-UI/static/css/main.00855698.chunk.css.map",
+    "static/js/2.7e8fced2.chunk.js.LICENSE.txt": "/swapi-UI/static/js/2.7e8fced2.chunk.js.LICENSE.txt",
+    "static/media/holocron.png": "/swapi-UI/static/media/holocron.79e78bde.png",
+    "static/media/icon.gif": "/swapi-UI/static/media/icon.5366247d.gif",
+    "static/media/logo_small.png": "/swapi-UI/static/media/logo_small.9f9cc56f.png",
+    "static/media/placeholderCharacter.png": "/swapi-UI/static/media/placeholderCharacter.5f909bb0.png",
+    "static/media/placeholderPlanet.png": "/swapi-UI/static/media/placeholderPlanet.9cc31679.png",
+    "static/media/placeholderSpaceship.png": "/swapi-UI/static/media/placeholderSpaceship.3c0180bd.png",
+    "static/media/planet.png": "/swapi-UI/static/media/planet.423bb5af.png",
+    "static/media/style.scss": "/swapi-UI/static/media/stars.511c5034.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9929a8b4.js",
+    "static/js/2.7e8fced2.chunk.js",
+    "static/css/main.00855698.chunk.css",
+    "static/js/main.3999cc17.chunk.js"
+  ]
+}
