@@ -1,0 +1,35 @@
+@import "../../Common/Styles/variables";
+.Quotes{
+  $upPadding: 5px;
+  padding: 0px 20px 0px 20px;
+  margin: 0px;
+
+
+  .Quotes-Quote{
+    display: block;
+    height: calc(100% - #{15px + $upPadding});
+    padding: $upPadding 0px 0px 0px;
+    margin: 0px;
+    font-style: italic;
+    color: $color-golden-dark;
+    text-align: center;
+    text-shadow: 0px 0px 2px $background-shadow-golden;
+    &:before{
+      content: "\201E";
+    }
+    &:after{
+      content: "\201D";
+    }
+  }
+  .Quotes-Author{
+    display: block;
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    line-height: 15px;
+    font-size: 12px;
+    color: $color-golden-dark;
+    text-shadow: 0px 0px 2px $background-shadow-golden;
+  }
+}

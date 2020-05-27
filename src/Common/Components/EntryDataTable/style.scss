@@ -1,0 +1,102 @@
+@import "../../Styles/variables";
+
+.EntryDataTable-Container{
+  display: block;
+  border-top: 1px solid $color-golden-dark;
+  margin: 10px 0px;
+  border-left: 1px solid $color-golden-dark;
+  border-right: 1px solid $color-golden-dark;
+
+  .EntryDataTable-Container-Title{
+    display: block;
+    margin: 0px;
+    padding: 10px 5px 10px 30px;
+    border-bottom: 1px solid $color-golden-dark;
+    font-size: 1.5rem;
+    background-color: rgba($color-golden-dark, 0.2);
+    color: $color-golden;
+    text-shadow: 0px 0px 2px $background-shadow-golden;
+    font-weight: 300;
+    user-select: none;
+  }
+  .EntryDataTable-Container-Row {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid $color-golden-dark;
+
+    .EntryDataTable-Container-Row-Image {
+      display: inline-block;
+      vertical-align: top;
+      max-height: 200px;
+      max-width: 200px;
+      flex: 1;
+      img {
+        max-height: 200px;
+        max-width: 200px;
+        box-sizing: border-box;
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+      }
+    }
+
+    .EntryDataTable-Container-Row-Informations {
+      padding: 5px 10px;
+      margin: 0px;
+      flex: 1;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0.9rem;
+      li{
+        display: block;
+      }
+    }
+    &.EntryDataTable-Container-Row-Clickable{
+      cursor: pointer;
+      &:hover{
+        background-color: rgba($color-golden-dark, 0.3);
+      }
+      &:hover:after{
+        max-width: 40px;
+      }
+      &:after{
+        content: "";
+        text-align: center;
+        flex: 1;
+        max-width: 20px;
+        background-color: #304b67;
+        transition: max-width 100ms ease-out;
+        background-image: url('./rightArrow.png');
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: rgba($color-golden-dark, 0.7);
+        border-left: 1px solid $color-golden-dark;
+      }
+    }
+  }
+
+  &.EntryDataTable-Container-Small{
+    .EntryDataTable-Container-Title{
+      padding: 5px 5px 5px 10px;
+      font-size: 1rem;
+
+    }
+    .EntryDataTable-Container-Row {
+      .EntryDataTable-Container-Row-Image {
+        max-height: 50px;
+        max-width: 50px;
+
+        img {
+          max-height: 50px;
+          max-width: 50px;
+        }
+        & ~ .EntryDataTable-Container-Row-Informations{
+          line-height: 50px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
+}

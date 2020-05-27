@@ -1,0 +1,83 @@
+@import "../../Common/Styles/variables";
+
+@keyframes AnimatedBackground-NearPlane-Animation {
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+@keyframes AnimatedBackground-FarPlane-Animation {
+  0%{
+    transform: translateY(10%);
+    filter: brightness(100%);
+  }
+  100%{
+    transform: translateY(0%);
+    filter: brightness(50%);
+  }
+ }
+
+.AnimatedBackground-Wrapper{
+  position: absolute;
+  top:0px;
+  bottom: 0px;
+  left:0px;
+  right:0px;
+  text-align: center;
+  user-select: none;
+  overflow: hidden;
+  & > *{
+    position: absolute;
+  }
+  .AnimatedBackground-Logo{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    height: 30px;
+    border: {
+      radius: 10px;
+      bottom: 1px solid darkgoldenrod;
+      right: 1px solid darkgoldenrod;
+    }
+    background-color: $background-darker-blue;
+    background-color: rgba(0,0,0,0.9);
+    /*
+    background-color: $background-dark-blue;
+    border: 3px solid darkgoldenrod;
+    border-top: none;
+    border-radius: 10px;
+     */
+  }
+
+  .AnimatedBackground-FarPlane{
+    left: 0px;
+    bottom: 0px;
+    min-height: 200%;
+    min-width: 100%;
+    background-image: url('./stars.jpg');
+    transform: translateY(50%);
+    filter: brightness(100%);
+    will-change: transform;
+  }
+  .AnimatedBackground-NearPlane{
+    left: 0px;
+    bottom: 0px;
+    max-height: 100%;
+    max-width: 900px;
+    transform: translateY(100%);
+    will-change: transform;
+  }
+  &-Animate{
+    .AnimatedBackground-FarPlane{
+      animation: AnimatedBackground-FarPlane-Animation 3s cubic-bezier(0.25, 0, 0, 0.9);
+      animation-fill-mode: forwards;
+    }
+    .AnimatedBackground-NearPlane{
+      animation: AnimatedBackground-NearPlane-Animation 3s cubic-bezier(0.25, 0, 0, 0.9);
+      animation-fill-mode: forwards;
+    }
+  }
+}

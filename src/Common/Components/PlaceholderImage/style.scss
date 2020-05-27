@@ -1,0 +1,7 @@
+@import "../../Styles/variables";
+
+.PlaceholderImage{
+  border: 1px solid $color-golden-dark;
+  background-color: rgba($color-golden-dark, 0.5);
+  vertical-align: middle;
+}

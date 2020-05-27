@@ -1,0 +1,57 @@
+@keyframes Loading-Wrapper-Animation {
+  0%{
+    opacity: 0.0;
+  }
+  100%{
+    opacity: 1.0;
+  }
+}@keyframes Loading-Wrapper-AnimationReversed {
+   0%{
+     opacity: 1.0;
+   }
+   100%{
+     opacity: 0.0;
+   }
+ }
+
+.Loading-Wrapper{
+  position: absolute;
+  top:0px;
+  bottom: 0px;
+  left:0px;
+  right:0px;
+  text-align: center;
+  user-select: none;
+  background-image: url('../../Images/pattern.png');
+  &:before{
+    content:"";
+    height: 100%;
+    width: 0px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .Loading-Container{
+    display: inline-block;
+    vertical-align: middle;
+    perspective: 100px;
+    img{
+      width: 50px;
+      height: 50px;
+    }
+    p{
+      height: 50px;
+      font-weight: bold;
+      color: darkgoldenrod;
+      filter: drop-shadow(0px 0px 5px darkgoldenrod);
+      transform: rotateX(40deg);
+    }
+  }
+  &.Loading-Wrapper-FadeInAnimation{
+    animation: Loading-Wrapper-Animation 200ms ease-out;
+  }
+  &.Loading-Wrapper-FadeOutAnimation{
+    animation: Loading-Wrapper-AnimationReversed 200ms ease-out;
+    animation-fill-mode: forwards;
+  }
+}
