@@ -1,5 +1,5 @@
-//const url = "https://swapi.dev/api/";
-const url = "http://localhost:8000/api/";
+const url = "https://swapi.dev/api/";
+//const url = "http://localhost:8000/api/";
 
 const requestTypes = {
     people: "people",
